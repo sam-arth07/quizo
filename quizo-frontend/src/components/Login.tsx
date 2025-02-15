@@ -17,7 +17,7 @@ const Login: React.FC<LoginProps> = ({ setUser }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${apiUrl}/login`, { username, password });
+      const response = await axios.post(`/login`, { username, password });
       if (response.data.success) {
         setUser({ teacherId: response.data.teacherId });
         navigate('/dashboard');

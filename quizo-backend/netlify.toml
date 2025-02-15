@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"       # If you need to compile TypeScript; adjust as needed.
+  functions = "netlify/functions" # Folder where your serverless functions reside.
+  publish = "dist"              # This can be a dummy folder if you’re only serving functions.
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200

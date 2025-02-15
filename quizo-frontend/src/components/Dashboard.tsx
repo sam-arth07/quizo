@@ -22,7 +22,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
   
   const fetchQuizzes = async () => {
     try {
-      const response = await axios.get(`/quizzes`, {
+      const response = await axios.get(`${apiUrl}/quizzes`, {
         params: { teacherId: user.teacherId },
       });
       if (response.data.success) {
@@ -35,7 +35,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
 
   const deleteQuiz = async (id: number) => {
     try {
-      const response = await axios.delete(`/quizzes/${id}`);
+      const response = await axios.delete(`${apiUrl}/quizzes/${id}`);
       if (response.data.success) {
         fetchQuizzes();
       }

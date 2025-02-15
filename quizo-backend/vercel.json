@@ -9,7 +9,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "https://quizo-backend-iota.vercel.app/"
+            "dest": "https://quizo-backend-iota.vercel.app/*"
         }
     ]
 }

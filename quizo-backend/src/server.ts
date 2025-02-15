@@ -12,6 +12,9 @@ initializeDatabase();
 
 // Middleware
 app.use(cors());
+app.use(cors({
+  origin: 'https://quizo-roan.vercel.app'
+}));
 app.use(bodyParser.json());
 
 // Static teacher credentials (no JWT required)

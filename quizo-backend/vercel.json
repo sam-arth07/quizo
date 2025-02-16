@@ -8,8 +8,8 @@
     ],
     "redirects": [
         {
-            "src": "/:path*",
-            "dest": "https://quizo-backend-iota.vercel.app/:path*"
+            "source": "/:path*",
+            "destination": "https://quizo-backend-iota.vercel.app/:path*"
         }
     ]
 }

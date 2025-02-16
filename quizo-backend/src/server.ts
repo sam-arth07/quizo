@@ -13,7 +13,7 @@ initializeDatabase();
 // Middleware
 app.use(cors());
 app.use(cors({
-  origin: 'https://quizo-roan.vercel.app'
+  origin: 'https://quizo-roan.vercel.app/*'
 }));
 app.use(bodyParser.json());
 

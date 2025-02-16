@@ -6,10 +6,10 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [
+    "redirects": [
         {
-            "src": "/(.*)",
-            "dest": "https://quizo-backend-iota.vercel.app/*"
+            "src": "/:path*",
+            "dest": "https://quizo-backend-iota.vercel.app/:path*"
         }
     ]
 }
